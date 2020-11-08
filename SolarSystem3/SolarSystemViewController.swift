@@ -5,17 +5,9 @@
 //  Created by Vladislav on 08.11.2020.
 //
 
+// Можно удалить
 import UIKit
 
 class SolarSystemViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-
-    
 
 }
