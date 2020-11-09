@@ -15,7 +15,7 @@ class NumberOfSatellitesViewController: UIViewController {
     @IBOutlet var planets: [UIImageView]!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var resultLabel: UILabel!
-    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var tryButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
     var numberOfPointsFromNumOfSatellitesVC = 0
@@ -132,9 +132,15 @@ class NumberOfSatellitesViewController: UIViewController {
         
         resultLabel.text = "Вы оказались близки к истине, ваш результат \(numberOfPointsFromNumOfSatellitesVC)баллов!"
         
-        contentView.isHidden = true
+        questionLabel.isHidden = true
+        sliderValueLabel.isHidden = true
+        slider.isHidden = true
+        tryButton.isHidden = true
         resultLabel.isHidden = false
         nextButton.isHidden = false
+        for planet in planets {
+            planet.isHidden = true
+        }
     }
     
     @IBAction func nextButtonPressed() {

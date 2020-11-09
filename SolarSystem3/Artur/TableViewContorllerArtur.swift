@@ -19,7 +19,7 @@ class TableViewControllerArtur: UITableViewController {
         tableView.rowHeight = 60
         navigationItem.leftBarButtonItem = editButtonItem
         planetListShuffle.shuffle()
-        
+        showAlertView(title: "оК", message: "Расставь планеты в порядке убывания от Солнца")
     }
     
     @IBAction func checkButtonPress(_ sender: UIBarButtonItem) {

@@ -14,7 +14,7 @@ class RadiusViewController: UIViewController {
     @IBOutlet weak var planetImageView: UIImageView!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var resultLabel: UILabel!
-    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var tryButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
     var numberOfPointsFromRadiusVC = 0
@@ -85,7 +85,11 @@ class RadiusViewController: UIViewController {
         
         resultLabel.text = "Вы оказались близки к истине, ваш результат \(numberOfPointsFromRadiusVC)баллов!"
         
-        contentView.isHidden = true
+        questionLabel.isHidden = true
+        sliderValueLabel.isHidden = true
+        slider.isHidden = true
+        planetImageView.isHidden = true
+        tryButton.isHidden = true
         resultLabel.isHidden = false
         nextButton.isHidden = false
     }

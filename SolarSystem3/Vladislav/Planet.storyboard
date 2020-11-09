@@ -114,7 +114,7 @@
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="LRW-Pq-pW8"/>
                                                     <constraint firstAttribute="width" secondItem="wcF-rj-m8x" secondAttribute="height" multiplier="1:1" id="b2h-RN-UCj"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="нептун"/>
+                                                <state key="normal" title="Button" image="нептун1"/>
                                                 <connections>
                                                     <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="iRW-nw-Je9"/>
                                                 </connections>
@@ -125,7 +125,7 @@
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="SUY-Ih-cMR"/>
                                                     <constraint firstAttribute="width" secondItem="GxH-NF-vn9" secondAttribute="height" multiplier="1:1" id="Ul4-6Y-lAy"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="уран"/>
+                                                <state key="normal" title="Button" image="уран1"/>
                                                 <connections>
                                                     <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="UaD-8L-VYo"/>
                                                 </connections>
@@ -136,7 +136,7 @@
                                                     <constraint firstAttribute="width" secondItem="DoN-Ji-DHD" secondAttribute="height" multiplier="1:1" id="30E-rr-zR4"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="95" id="vNR-Wy-K9v"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="сатурн"/>
+                                                <state key="normal" title="Button" image="сатурн1"/>
                                                 <connections>
                                                     <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="CkJ-Xr-jpY"/>
                                                 </connections>
@@ -147,7 +147,7 @@
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="92" id="7bO-Uh-k0c"/>
                                                     <constraint firstAttribute="width" secondItem="5Ah-6G-3pT" secondAttribute="height" multiplier="1:1" id="sUN-hC-O7l"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="юпитер"/>
+                                                <state key="normal" title="Button" image="юпитер1"/>
                                                 <connections>
                                                     <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="lf7-LU-QES"/>
                                                 </connections>
@@ -158,7 +158,7 @@
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="9K5-1V-pso"/>
                                                     <constraint firstAttribute="width" secondItem="igN-fx-tN2" secondAttribute="height" multiplier="1:1" id="k4o-uC-Odi"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="марс"/>
+                                                <state key="normal" title="Button" image="марс1"/>
                                                 <connections>
                                                     <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="Est-Ux-UnH"/>
                                                 </connections>
@@ -170,7 +170,7 @@
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="Od1-cN-bh2"/>
                                                     <constraint firstAttribute="width" secondItem="ejB-Ym-1B3" secondAttribute="height" multiplier="1:1" id="iXx-62-nxh"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="земля"/>
+                                                <state key="normal" title="Button" image="земля1"/>
                                                 <connections>
                                                     <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="6cB-RI-JT8"/>
                                                 </connections>
@@ -181,7 +181,7 @@
                                                     <constraint firstAttribute="width" secondItem="4rK-xH-P7m" secondAttribute="height" multiplier="1:1" id="UCD-LI-Pz5"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="aip-On-mXy"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="венера"/>
+                                                <state key="normal" title="Button" image="венера1"/>
                                                 <connections>
                                                     <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="gIx-Xf-lO3"/>
                                                 </connections>
@@ -192,7 +192,7 @@
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="1Nh-Zc-bev"/>
                                                     <constraint firstAttribute="width" secondItem="fe7-IL-Oro" secondAttribute="height" multiplier="1:1" id="5AG-Cb-knF"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="Меркурий"/>
+                                                <state key="normal" title="Button" image="меркурий1"/>
                                                 <connections>
                                                     <action selector="planetPushButton:" destination="MQl-ka-Pao" eventType="touchUpInside" id="Sas-6I-NR8"/>
                                                 </connections>
@@ -202,49 +202,49 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="YGU-6c-K4u">
                                         <rect key="frame" x="90" y="33" width="81.5" height="514"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меркурий" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxX-Ru-LlH">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меркурий" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxX-Ru-LlH">
                                                 <rect key="frame" x="0.0" y="0.0" width="81.5" height="20.5"/>
                                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меркурий" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lc-VX-Ea1">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меркурий" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lc-VX-Ea1">
                                                 <rect key="frame" x="0.0" y="70.5" width="81.5" height="20.5"/>
                                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меркурий" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ah2-yk-ghP">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меркурий" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ah2-yk-ghP">
                                                 <rect key="frame" x="0.0" y="141" width="81.5" height="20.5"/>
                                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меркурий" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHz-GU-LqT">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меркурий" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHz-GU-LqT">
                                                 <rect key="frame" x="0.0" y="211.5" width="81.5" height="20.5"/>
                                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меркурий" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgb-rW-UMk">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меркурий" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgb-rW-UMk">
                                                 <rect key="frame" x="0.0" y="282" width="81.5" height="20.5"/>
                                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меркурий" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfI-ow-B6g">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меркурий" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfI-ow-B6g">
                                                 <rect key="frame" x="0.0" y="352.5" width="81.5" height="20.5"/>
                                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меркурий" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdC-7D-OEW">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меркурий" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdC-7D-OEW">
                                                 <rect key="frame" x="0.0" y="423" width="81.5" height="20.5"/>
                                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -431,14 +431,15 @@
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="nightSky" width="1152" height="2048"/>
         <image name="rotate.3d" catalog="system" width="128" height="121"/>
-        <image name="Меркурий" width="65" height="67"/>
-        <image name="венера" width="382" height="382"/>
+        <image name="венера1" width="382" height="382"/>
         <image name="земля" width="430" height="428"/>
-        <image name="марс" width="365" height="367"/>
-        <image name="нептун" width="420" height="420"/>
-        <image name="сатурн" width="797" height="797"/>
-        <image name="уран" width="478" height="480"/>
-        <image name="юпитер" width="797" height="797"/>
+        <image name="земля1" width="430" height="428"/>
+        <image name="марс1" width="365" height="367"/>
+        <image name="меркурий1" width="186" height="184"/>
+        <image name="нептун1" width="420" height="420"/>
+        <image name="сатурн1" width="797" height="797"/>
+        <image name="уран1" width="478" height="480"/>
+        <image name="юпитер1" width="797" height="797"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
