@@ -431,7 +431,7 @@
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="nightSky" width="1152" height="2048"/>
         <image name="rotate.3d" catalog="system" width="128" height="121"/>
-        <image name="Меркурий" width="128" height="128"/>
+        <image name="Меркурий" width="65" height="67"/>
         <image name="венера" width="382" height="382"/>
         <image name="земля" width="430" height="428"/>
         <image name="марс" width="365" height="367"/>

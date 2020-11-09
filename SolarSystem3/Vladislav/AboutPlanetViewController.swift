@@ -37,16 +37,7 @@ class AboutPlanetViewController: UIViewController {
     
     //MARK: Private Methods
     private func howPlanetChoose() {
-        switch pushButtonPlanet {
-        case 0: chosePlanet = "Меркурий"
-        case 1: chosePlanet = "Венера"
-        case 2: chosePlanet = "Земля"
-        case 3: chosePlanet = "Марс"
-        case 4: chosePlanet = "Юпитер"
-        case 5: chosePlanet = "Сатурн"
-        case 6: chosePlanet = "Уран"
-        default:chosePlanet = "Нептун"
-        }
+        chosePlanet = planets[pushButtonPlanet].name
     }
     
     private func planetInfo() {

@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol ResultsViewControllerDelegate {
+    var userNameDelegate: String { get }
+}
+
 class AuthorizationViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var userTextField: UITextField!
@@ -120,6 +124,12 @@ extension AuthorizationViewController {
             enterButtonPressed()
         }
         return true
+    }
+}
+
+extension AuthorizationViewController: ResultsViewControllerDelegate {
+    var userNameDelegate: String {
+        userData.username
     }
 }
 

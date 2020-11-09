@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nightSky" translatesAutoresizingMaskIntoConstraints="NO" id="wdK-K0-Ab5">
-                                <rect key="frame" x="-389" y="-691" width="1152" height="2048"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nightSky" translatesAutoresizingMaskIntoConstraints="NO" id="wdK-K0-Ab5">
+                                <rect key="frame" x="-388.5" y="-690.5" width="1152" height="2048"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYc-Oh-Xs6" userLabel="Продолжить">
                                 <rect key="frame" x="123.5" y="488" width="128" height="39"/>
@@ -41,28 +40,47 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lg5-FX-46Z">
                                 <rect key="frame" x="16" y="60" width="343" height="547"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Какова масса планеты \(planetList.name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbc-lX-IMY">
-                                        <rect key="frame" x="0.0" y="20" width="343" height="108"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какова масса планеты \(planetList.name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbc-lX-IMY">
+                                        <rect key="frame" x="0.0" y="20" width="343" height="85"/>
+                                        <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Rbc-lX-IMY" secondAttribute="height" multiplier="343:85" id="PgV-b3-00M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="значение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1E-aw-KHS">
+                                        <rect key="frame" x="124" y="182" width="95" height="27"/>
                                         <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="0.0" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="ctA-zE-PtY">
-                                        <rect key="frame" x="-2" y="228" width="347" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="0.0" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="ctA-zE-PtY">
+                                        <rect key="frame" x="-2" y="228" width="347" height="31"/>
                                         <connections>
                                             <action selector="sliderAction" destination="U5i-23-NAk" eventType="valueChanged" id="vyk-8Q-Zjs"/>
                                         </connections>
                                     </slider>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="GvA-1W-8mc">
-                                        <rect key="frame" x="217" y="265" width="126" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="GvA-1W-8mc">
+                                        <rect key="frame" x="187" y="265" width="156" height="156"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="GvA-1W-8mc" secondAttribute="height" multiplier="1:1" id="2ye-Er-bEP"/>
+                                            <constraint firstAttribute="height" constant="156" id="Kda-Ww-gw8"/>
+                                            <constraint firstAttribute="width" constant="156" id="kwj-QR-QwV"/>
+                                        </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geg-kt-9fC">
-                                        <rect key="frame" x="116" y="428" width="110" height="39"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="NLZ-HS-iRO">
+                                        <rect key="frame" x="0.0" y="265" width="65" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="Yqj-kw-J9O"/>
+                                            <constraint firstAttribute="width" secondItem="NLZ-HS-iRO" secondAttribute="height" multiplier="1:1" id="eEm-Cp-VGy"/>
+                                            <constraint firstAttribute="width" constant="65" id="xZR-UX-BBP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geg-kt-9fC">
+                                        <rect key="frame" x="116" y="429" width="111" height="39"/>
                                         <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Проверить"/>
@@ -70,20 +88,26 @@
                                             <action selector="checkingButtonPassed" destination="U5i-23-NAk" eventType="touchUpInside" id="KuY-Xs-6iM"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="NLZ-HS-iRO">
-                                        <rect key="frame" x="0.0" y="265" width="74" height="82"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="GvA-1W-8mc" secondAttribute="trailing" id="1Z9-1A-AnW"/>
+                                    <constraint firstItem="NLZ-HS-iRO" firstAttribute="leading" secondItem="lg5-FX-46Z" secondAttribute="leading" id="9Zg-UK-lqN"/>
+                                    <constraint firstAttribute="trailing" secondItem="geg-kt-9fC" secondAttribute="trailing" constant="116" id="BF7-c4-JMD"/>
+                                    <constraint firstItem="ctA-zE-PtY" firstAttribute="leading" secondItem="lg5-FX-46Z" secondAttribute="leading" id="Hr2-HV-lSC"/>
+                                    <constraint firstItem="NLZ-HS-iRO" firstAttribute="top" secondItem="ctA-zE-PtY" secondAttribute="bottom" constant="7" id="PED-fd-sQb"/>
+                                    <constraint firstItem="ctA-zE-PtY" firstAttribute="top" secondItem="Q1E-aw-KHS" secondAttribute="bottom" constant="19" id="Pav-kE-gJu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q1E-aw-KHS" secondAttribute="trailing" constant="124" id="SLI-xU-nxW"/>
+                                    <constraint firstItem="geg-kt-9fC" firstAttribute="leading" secondItem="lg5-FX-46Z" secondAttribute="leading" constant="116" id="VtT-pX-Fzb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rbc-lX-IMY" secondAttribute="trailing" id="YEW-CM-4ES"/>
+                                    <constraint firstItem="geg-kt-9fC" firstAttribute="top" secondItem="GvA-1W-8mc" secondAttribute="bottom" constant="8" symbolic="YES" id="aNk-0Y-9Cv"/>
+                                    <constraint firstItem="Rbc-lX-IMY" firstAttribute="leading" secondItem="lg5-FX-46Z" secondAttribute="leading" id="cgn-bY-0Si"/>
+                                    <constraint firstItem="GvA-1W-8mc" firstAttribute="top" secondItem="ctA-zE-PtY" secondAttribute="bottom" constant="7" id="dDJ-cy-YHm"/>
+                                    <constraint firstItem="Q1E-aw-KHS" firstAttribute="leading" secondItem="lg5-FX-46Z" secondAttribute="leading" constant="124" id="fBR-5X-bNO"/>
+                                    <constraint firstAttribute="trailing" secondItem="ctA-zE-PtY" secondAttribute="trailing" id="gV0-kZ-8fH"/>
+                                    <constraint firstItem="Rbc-lX-IMY" firstAttribute="top" secondItem="lg5-FX-46Z" secondAttribute="top" constant="20" symbolic="YES" id="o0u-V1-1sc"/>
+                                    <constraint firstItem="Q1E-aw-KHS" firstAttribute="top" secondItem="Rbc-lX-IMY" secondAttribute="bottom" constant="77" id="pBa-2K-G0j"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="значение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1E-aw-KHS">
-                                <rect key="frame" x="140" y="245" width="95" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zKG-ig-QeU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -94,6 +118,8 @@
                             <constraint firstItem="lg5-FX-46Z" firstAttribute="top" secondItem="zKG-ig-QeU" secondAttribute="top" constant="60" id="FeJ-0M-a90"/>
                             <constraint firstItem="yv8-J6-SjB" firstAttribute="centerX" secondItem="Uqz-J9-SW3" secondAttribute="centerX" id="J0F-zc-bXF"/>
                             <constraint firstItem="lg5-FX-46Z" firstAttribute="width" secondItem="Uqz-J9-SW3" secondAttribute="height" multiplier="343:667" id="PTg-hn-eg0"/>
+                            <constraint firstItem="wdK-K0-Ab5" firstAttribute="centerY" secondItem="Uqz-J9-SW3" secondAttribute="centerY" id="XXb-aV-byh"/>
+                            <constraint firstItem="wdK-K0-Ab5" firstAttribute="centerX" secondItem="Uqz-J9-SW3" secondAttribute="centerX" id="YCv-RS-a6g"/>
                             <constraint firstItem="yv8-J6-SjB" firstAttribute="leading" secondItem="zKG-ig-QeU" secondAttribute="leading" constant="16" id="aTu-ha-VBW"/>
                             <constraint firstItem="sYc-Oh-Xs6" firstAttribute="centerX" secondItem="Uqz-J9-SW3" secondAttribute="centerX" id="eTI-QN-XlJ"/>
                             <constraint firstItem="zKG-ig-QeU" firstAttribute="bottom" secondItem="sYc-Oh-Xs6" secondAttribute="bottom" constant="140" id="kAu-vj-y2C"/>
@@ -123,9 +149,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nightSky" translatesAutoresizingMaskIntoConstraints="NO" id="th7-AG-jIN">
-                                <rect key="frame" x="-389" y="-691" width="1152" height="2048"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nightSky" translatesAutoresizingMaskIntoConstraints="NO" id="th7-AG-jIN">
+                                <rect key="frame" x="-388.5" y="-690.5" width="1152" height="2048"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы оказались близки к истине, ваш результат ___баллов" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKK-ab-q0W">
                                 <rect key="frame" x="16" y="307" width="343" height="53"/>
@@ -147,43 +172,63 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-CK-imr">
                                 <rect key="frame" x="16" y="60" width="343" height="547"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Каков радиус планеты \(planetList.name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-pz-aAF">
-                                        <rect key="frame" x="0.0" y="20" width="343" height="108"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="значение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZp-qV-HMR">
+                                        <rect key="frame" x="124" y="180" width="95" height="27"/>
                                         <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mhf-qZ-6fd">
-                                        <rect key="frame" x="-2" y="228" width="347" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Каков радиус планеты \(planetList.name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-pz-aAF">
+                                        <rect key="frame" x="0.0" y="20" width="343" height="101"/>
+                                        <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="b8e-pz-aAF" secondAttribute="height" multiplier="343:101" id="hzB-Ip-3Um"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mhf-qZ-6fd">
+                                        <rect key="frame" x="-2" y="228" width="347" height="31"/>
                                     </slider>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bX-yJ-4Ma">
-                                        <rect key="frame" x="116" y="428" width="110" height="39"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Земля" translatesAutoresizingMaskIntoConstraints="NO" id="dB7-vE-CLd">
+                                        <rect key="frame" x="107.5" y="265" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="3do-fh-S9E"/>
+                                            <constraint firstAttribute="height" constant="128" id="Jra-Lg-uSd"/>
+                                            <constraint firstAttribute="width" secondItem="dB7-vE-CLd" secondAttribute="height" multiplier="1:1" id="ksH-2M-CaR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bX-yJ-4Ma">
+                                        <rect key="frame" x="116" y="434" width="111" height="39"/>
                                         <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Проверить"/>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Земля" translatesAutoresizingMaskIntoConstraints="NO" id="dB7-vE-CLd">
-                                        <rect key="frame" x="108" y="265" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="UZp-qV-HMR" secondAttribute="trailing" constant="124" id="0Z6-rH-513"/>
+                                    <constraint firstItem="dB7-vE-CLd" firstAttribute="top" secondItem="mhf-qZ-6fd" secondAttribute="bottom" constant="7" id="3Cz-9A-4cf"/>
+                                    <constraint firstItem="UZp-qV-HMR" firstAttribute="top" secondItem="b8e-pz-aAF" secondAttribute="bottom" constant="59" id="42n-7S-PlC"/>
+                                    <constraint firstAttribute="trailing" secondItem="mhf-qZ-6fd" secondAttribute="trailing" id="B7V-hd-4WV"/>
+                                    <constraint firstItem="mhf-qZ-6fd" firstAttribute="leading" secondItem="Ggg-CK-imr" secondAttribute="leading" id="DGl-Tc-3wI"/>
+                                    <constraint firstItem="b8e-pz-aAF" firstAttribute="top" secondItem="Ggg-CK-imr" secondAttribute="top" constant="20" symbolic="YES" id="EQw-Ia-MU4"/>
+                                    <constraint firstItem="4bX-yJ-4Ma" firstAttribute="leading" secondItem="Ggg-CK-imr" secondAttribute="leading" constant="116" id="G0X-nl-DkY"/>
+                                    <constraint firstItem="mhf-qZ-6fd" firstAttribute="top" secondItem="UZp-qV-HMR" secondAttribute="bottom" constant="21" id="HDU-ZD-gi6"/>
+                                    <constraint firstItem="4bX-yJ-4Ma" firstAttribute="top" secondItem="dB7-vE-CLd" secondAttribute="bottom" constant="41" id="I6S-2b-WZq"/>
+                                    <constraint firstAttribute="trailing" secondItem="b8e-pz-aAF" secondAttribute="trailing" id="gLL-bS-dpr"/>
+                                    <constraint firstItem="b8e-pz-aAF" firstAttribute="leading" secondItem="Ggg-CK-imr" secondAttribute="leading" id="h6u-pf-IBv"/>
+                                    <constraint firstAttribute="trailing" secondItem="4bX-yJ-4Ma" secondAttribute="trailing" constant="116" id="ogr-Hs-xzx"/>
+                                    <constraint firstItem="dB7-vE-CLd" firstAttribute="centerX" secondItem="Ggg-CK-imr" secondAttribute="centerX" id="sHN-gT-MDC"/>
+                                    <constraint firstItem="UZp-qV-HMR" firstAttribute="leading" secondItem="Ggg-CK-imr" secondAttribute="leading" constant="124" id="zDu-N4-dMk"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="значение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZp-qV-HMR">
-                                <rect key="frame" x="140" y="245" width="95" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TnJ-2f-IUW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="th7-AG-jIN" firstAttribute="centerX" secondItem="82a-V4-4zh" secondAttribute="centerX" id="3sn-0d-xco"/>
                             <constraint firstItem="TnJ-2f-IUW" firstAttribute="bottom" secondItem="J20-TJ-mry" secondAttribute="bottom" constant="122" id="5W8-6N-zlj"/>
                             <constraint firstItem="TnJ-2f-IUW" firstAttribute="trailing" secondItem="SKK-ab-q0W" secondAttribute="trailing" constant="16" id="7tO-pX-i0e"/>
                             <constraint firstItem="J20-TJ-mry" firstAttribute="centerX" secondItem="82a-V4-4zh" secondAttribute="centerX" id="Im8-XM-p3L"/>
@@ -191,6 +236,7 @@
                             <constraint firstItem="SKK-ab-q0W" firstAttribute="leading" secondItem="TnJ-2f-IUW" secondAttribute="leading" constant="16" id="KY6-av-ghF"/>
                             <constraint firstItem="SKK-ab-q0W" firstAttribute="centerY" secondItem="82a-V4-4zh" secondAttribute="centerY" id="SJU-m6-gSq"/>
                             <constraint firstItem="Ggg-CK-imr" firstAttribute="top" secondItem="TnJ-2f-IUW" secondAttribute="top" constant="60" id="V5N-UA-c2Z"/>
+                            <constraint firstItem="th7-AG-jIN" firstAttribute="centerY" secondItem="82a-V4-4zh" secondAttribute="centerY" id="Zap-zi-n7T"/>
                             <constraint firstItem="Ggg-CK-imr" firstAttribute="width" secondItem="82a-V4-4zh" secondAttribute="height" multiplier="343:667" id="bn5-gt-SXd"/>
                             <constraint firstItem="Ggg-CK-imr" firstAttribute="centerX" secondItem="82a-V4-4zh" secondAttribute="centerX" id="dQJ-j1-AAQ"/>
                             <constraint firstItem="SKK-ab-q0W" firstAttribute="centerX" secondItem="82a-V4-4zh" secondAttribute="centerX" id="gWw-sN-eUB"/>

@@ -9,15 +9,16 @@ import UIKit
 
 class ResultsViewController: UIViewController {
     
+    var userNameDelegate: ResultsViewControllerDelegate!
+    
     @IBOutlet weak var resultLabel: UILabel!
     
     var numberOfPointsFromNumOfSatellitesVC: Int!
-    let userData = User.userData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        resultLabel.text = "Поздравляем \(userData.username)!\n Ваш результат \(numberOfPointsFromNumOfSatellitesVC ?? 100)"
+        let userName = userNameDelegate.userNameDelegate
+        resultLabel.text = "Поздравляем \(userName)!\n Ваш результат \(numberOfPointsFromNumOfSatellitesVC ?? 100)"
         
     }
 }

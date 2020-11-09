@@ -18,18 +18,13 @@
 		6F4E280D255851EE0068CDDC /* RadiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E280C255851EE0068CDDC /* RadiusViewController.swift */; };
 		6F4E2810255852260068CDDC /* NumberOfSatellitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E280F255852260068CDDC /* NumberOfSatellitesViewController.swift */; };
 		6F4E28182558B1410068CDDC /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4E28172558B1410068CDDC /* ResultsViewController.swift */; };
-		6FB77A4625593E9C0040EBAF /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB77A4525593E9C0040EBAF /* NavigationViewController.swift */; };
 		6FB9B67B2557EF2000578B87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9B67A2557EF2000578B87 /* AppDelegate.swift */; };
 		6FB9B67D2557EF2000578B87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9B67C2557EF2000578B87 /* SceneDelegate.swift */; };
-		6FB9B67F2557EF2000578B87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9B67E2557EF2000578B87 /* ViewController.swift */; };
-		6FB9B6822557EF2000578B87 /* other.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9B6802557EF2000578B87 /* other.storyboard */; };
 		6FB9B6842557EF2300578B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9B6832557EF2300578B87 /* Assets.xcassets */; };
 		6FB9B6872557EF2300578B87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB9B6852557EF2300578B87 /* LaunchScreen.storyboard */; };
 		6FB9B6912557EF5400578B87 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9B6902557EF5400578B87 /* DataManager.swift */; };
 		6FB9B6942557EF6600578B87 /* PlanetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9B6932557EF6600578B87 /* PlanetModel.swift */; };
 		8654ADAA2557F61F00747295 /* Planet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8654ADA92557F61F00747295 /* Planet.storyboard */; };
-		8654ADAF25580C8400747295 /* SolarSystemTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654ADAE25580C8400747295 /* SolarSystemTabBarController.swift */; };
-		8654ADB225580CB800747295 /* SolarSystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654ADB125580CB800747295 /* SolarSystemViewController.swift */; };
 		8654ADB525580CD500747295 /* AboutPlanetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654ADB425580CD500747295 /* AboutPlanetViewController.swift */; };
 		8654ADB825580D3600747295 /* PlanetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8654ADB725580D3600747295 /* PlanetsViewController.swift */; };
 		91338B912557F16F009F9745 /* StoryboardArtur.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91338B902557F16F009F9745 /* StoryboardArtur.storyboard */; };
@@ -49,20 +44,15 @@
 		6F4E280C255851EE0068CDDC /* RadiusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusViewController.swift; sourceTree = "<group>"; };
 		6F4E280F255852260068CDDC /* NumberOfSatellitesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfSatellitesViewController.swift; sourceTree = "<group>"; };
 		6F4E28172558B1410068CDDC /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
-		6FB77A4525593E9C0040EBAF /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		6FB9B6772557EF2000578B87 /* SolarSystem3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolarSystem3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB9B67A2557EF2000578B87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FB9B67C2557EF2000578B87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6FB9B67E2557EF2000578B87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6FB9B6812557EF2000578B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/other.storyboard; sourceTree = "<group>"; };
 		6FB9B6832557EF2300578B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FB9B6862557EF2300578B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FB9B6882557EF2300578B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FB9B6902557EF5400578B87 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		6FB9B6932557EF6600578B87 /* PlanetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetModel.swift; sourceTree = "<group>"; };
 		8654ADA92557F61F00747295 /* Planet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Planet.storyboard; sourceTree = "<group>"; };
-		8654ADAE25580C8400747295 /* SolarSystemTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemTabBarController.swift; sourceTree = "<group>"; };
-		8654ADB125580CB800747295 /* SolarSystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemViewController.swift; sourceTree = "<group>"; };
 		8654ADB425580CD500747295 /* AboutPlanetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPlanetViewController.swift; sourceTree = "<group>"; };
 		8654ADB725580D3600747295 /* PlanetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewController.swift; sourceTree = "<group>"; };
 		91338B902557F16F009F9745 /* StoryboardArtur.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardArtur.storyboard; sourceTree = "<group>"; };
@@ -114,9 +104,6 @@
 			children = (
 				8654ADA92557F61F00747295 /* Planet.storyboard */,
 				8654ADB725580D3600747295 /* PlanetsViewController.swift */,
-				8654ADAE25580C8400747295 /* SolarSystemTabBarController.swift */,
-				6FB77A4525593E9C0040EBAF /* NavigationViewController.swift */,
-				8654ADB125580CB800747295 /* SolarSystemViewController.swift */,
 				8654ADB425580CD500747295 /* AboutPlanetViewController.swift */,
 			);
 			path = Vladislav;
@@ -145,8 +132,6 @@
 				6F4E280025583A7F0068CDDC /* Danya */,
 				6F4E27FF25583A510068CDDC /* Hayyim */,
 				6F4E280125583AA20068CDDC /* Vladislav */,
-				6FB9B6802557EF2000578B87 /* other.storyboard */,
-				6FB9B67E2557EF2000578B87 /* ViewController.swift */,
 				6FB9B6832557EF2300578B87 /* Assets.xcassets */,
 				6FB9B6852557EF2300578B87 /* LaunchScreen.storyboard */,
 				6FB9B6882557EF2300578B87 /* Info.plist */,
@@ -228,7 +213,6 @@
 				91338B912557F16F009F9745 /* StoryboardArtur.storyboard in Resources */,
 				6FB9B6872557EF2300578B87 /* LaunchScreen.storyboard in Resources */,
 				6FB9B6842557EF2300578B87 /* Assets.xcassets in Resources */,
-				6FB9B6822557EF2000578B87 /* other.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,15 +227,12 @@
 				6F4E2810255852260068CDDC /* NumberOfSatellitesViewController.swift in Sources */,
 				91338B962557F1B1009F9745 /* TableViewContorllerArtur.swift in Sources */,
 				6F4E28182558B1410068CDDC /* ResultsViewController.swift in Sources */,
-				8654ADAF25580C8400747295 /* SolarSystemTabBarController.swift in Sources */,
 				6F4E27FC255836BA0068CDDC /* AuthorizationViewController.swift in Sources */,
 				6F4E280D255851EE0068CDDC /* RadiusViewController.swift in Sources */,
-				6FB9B67F2557EF2000578B87 /* ViewController.swift in Sources */,
 				6FB9B6912557EF5400578B87 /* DataManager.swift in Sources */,
 				6F4E280A255851DD0068CDDC /* MassViewController.swift in Sources */,
 				6F4E27FA255836BA0068CDDC /* RegistrationViewController.swift in Sources */,
 				6F4E280425583B240068CDDC /* MenuViewController.swift in Sources */,
-				6FB77A4625593E9C0040EBAF /* NavigationViewController.swift in Sources */,
 				8654ADB825580D3600747295 /* PlanetsViewController.swift in Sources */,
 				6F4E27F8255836BA0068CDDC /* UserData.swift in Sources */,
 				6FB9B67B2557EF2000578B87 /* AppDelegate.swift in Sources */,
@@ -259,21 +240,12 @@
 				6FB9B6942557EF6600578B87 /* PlanetModel.swift in Sources */,
 				8654ADB525580CD500747295 /* AboutPlanetViewController.swift in Sources */,
 				6F4E27F9255836BA0068CDDC /* PopUpRegistrationViewController.swift in Sources */,
-				8654ADB225580CB800747295 /* SolarSystemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6FB9B6802557EF2000578B87 /* other.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6FB9B6812557EF2000578B87 /* Base */,
-			);
-			name = other.storyboard;
-			sourceTree = "<group>";
-		};
 		6FB9B6852557EF2300578B87 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
