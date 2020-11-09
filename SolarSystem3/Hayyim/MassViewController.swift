@@ -33,7 +33,7 @@ class MassViewController: UIViewController {
         
         resultLabel.isHidden = true
         nextButton.isHidden = true
-        
+        sliderValueLabel.text = String(format: "%1.2f", slider.value)
     }
     
     private func setElements() {
@@ -42,6 +42,7 @@ class MassViewController: UIViewController {
         questionLabel.text = "Какова масса планеты \(planetName)?"
         smallPlanetImageView.image = UIImage(named: planetName)
         bigPlanetImageView.image = UIImage(named: planetName)
+    
     }
     
     

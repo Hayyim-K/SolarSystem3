@@ -27,7 +27,6 @@
                                 <connections>
                                     <action selector="checkingButtonPassed" destination="U5i-23-NAk" eventType="touchUpInside" id="Ibp-h5-3kg"/>
                                     <action selector="nextButtonPressed" destination="U5i-23-NAk" eventType="touchUpInside" id="iSa-Q3-cFu"/>
-                                    <segue destination="aAe-J2-0ah" kind="show" identifier="radiusVC" id="raD-lJ-gLx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какова масса планеты \(planetList.name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbc-lX-IMY">
@@ -124,6 +123,7 @@
                         <outlet property="sliderValueLabel" destination="Q1E-aw-KHS" id="zqV-83-OUZ"/>
                         <outlet property="smallPlanetImageView" destination="NLZ-HS-iRO" id="yZO-xN-lBW"/>
                         <outlet property="tryButton" destination="geg-kt-9fC" id="HmY-iE-FDt"/>
+                        <segue destination="aAe-J2-0ah" kind="show" identifier="radiusVC" id="y4z-Wm-9W6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lqb-0F-qV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -167,6 +167,9 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mhf-qZ-6fd">
                                 <rect key="frame" x="14" y="251.5" width="346" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction" destination="aAe-J2-0ah" eventType="valueChanged" id="FtB-AK-YRW"/>
+                                </connections>
                             </slider>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Земля" translatesAutoresizingMaskIntoConstraints="NO" id="dB7-vE-CLd">
                                 <rect key="frame" x="123" y="306.5" width="128" height="128"/>
@@ -183,7 +186,6 @@
                                 <state key="normal" title="Продолжить"/>
                                 <connections>
                                     <action selector="nextButtonPressed" destination="aAe-J2-0ah" eventType="touchUpInside" id="HTt-0R-76F"/>
-                                    <segue destination="FpI-cj-Bz4" kind="show" id="X17-p6-5Vz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bX-yJ-4Ma">
@@ -191,6 +193,9 @@
                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Проверить"/>
+                                <connections>
+                                    <action selector="checkingButtonPassed" destination="aAe-J2-0ah" eventType="touchUpInside" id="j6N-H1-1le"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TnJ-2f-IUW"/>
@@ -229,6 +234,7 @@
                         <outlet property="slider" destination="mhf-qZ-6fd" id="1wd-k9-i5K"/>
                         <outlet property="sliderValueLabel" destination="UZp-qV-HMR" id="MiS-4G-Ylj"/>
                         <outlet property="tryButton" destination="4bX-yJ-4Ma" id="bEm-Ji-pRY"/>
+                        <segue destination="FpI-cj-Bz4" kind="show" identifier="satelliteVC" id="Hkh-8Z-drL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="swM-6V-PlR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -287,7 +293,6 @@
                                     <action selector="checkingButtonPassed" destination="U5i-23-NAk" eventType="touchUpInside" id="Nj6-WX-XWA"/>
                                     <action selector="nextButtonPressed" destination="U5i-23-NAk" eventType="touchUpInside" id="nZ3-Ga-uZ5"/>
                                     <action selector="nextButtonPressed" destination="FpI-cj-Bz4" eventType="touchUpInside" id="wTA-bh-sfG"/>
-                                    <segue destination="YHs-Nm-3PS" kind="show" id="u31-Ry-Aw9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="значение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKi-s9-2gC">
@@ -308,25 +313,25 @@
                                             <constraint firstAttribute="height" constant="40" id="inq-Fc-iaC"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="hiU-tj-Lsi">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="hiU-tj-Lsi">
                                         <rect key="frame" x="42" y="0.0" width="40" height="40"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="CAs-9d-63r">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="CAs-9d-63r">
                                         <rect key="frame" x="84" y="0.0" width="40" height="40"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="rzv-xB-Vym">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="rzv-xB-Vym">
                                         <rect key="frame" x="126" y="0.0" width="40" height="40"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="2Gl-24-ppM">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="2Gl-24-ppM">
                                         <rect key="frame" x="168" y="0.0" width="40" height="40"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="13d-Ur-aKS">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="13d-Ur-aKS">
                                         <rect key="frame" x="210" y="0.0" width="40" height="40"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="cch-cx-PzX">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="cch-cx-PzX">
                                         <rect key="frame" x="252" y="0.0" width="40" height="40"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="mXY-w9-szk">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Венера" translatesAutoresizingMaskIntoConstraints="NO" id="mXY-w9-szk">
                                         <rect key="frame" x="294" y="0.0" width="40" height="40"/>
                                     </imageView>
                                 </subviews>
@@ -366,13 +371,15 @@
                         <outlet property="slider" destination="auN-hB-VSG" id="U2J-Ac-bcZ"/>
                         <outlet property="sliderValueLabel" destination="uKi-s9-2gC" id="KhX-xL-ZVm"/>
                         <outlet property="tryButton" destination="POo-8y-iHo" id="u3v-sH-Bfc"/>
-                        <outletCollection property="planets" destination="HQc-5J-1aE" collectionClass="NSMutableArray" id="Uwo-Mt-gLZ"/>
-                        <outletCollection property="planets" destination="hiU-tj-Lsi" collectionClass="NSMutableArray" id="sCc-0B-K6F"/>
-                        <outletCollection property="planets" destination="rzv-xB-Vym" collectionClass="NSMutableArray" id="0Rp-1r-MRG"/>
-                        <outletCollection property="planets" destination="2Gl-24-ppM" collectionClass="NSMutableArray" id="Fgh-Vs-zdD"/>
-                        <outletCollection property="planets" destination="13d-Ur-aKS" collectionClass="NSMutableArray" id="huS-YA-iGB"/>
-                        <outletCollection property="planets" destination="cch-cx-PzX" collectionClass="NSMutableArray" id="4dC-c7-UIA"/>
-                        <outletCollection property="planets" destination="mXY-w9-szk" collectionClass="NSMutableArray" id="YXQ-1H-pr6"/>
+                        <outletCollection property="planets" destination="HQc-5J-1aE" collectionClass="NSMutableArray" id="aFa-8t-gQ0"/>
+                        <outletCollection property="planets" destination="hiU-tj-Lsi" collectionClass="NSMutableArray" id="Uy6-Bw-epf"/>
+                        <outletCollection property="planets" destination="CAs-9d-63r" collectionClass="NSMutableArray" id="XDh-cu-e2h"/>
+                        <outletCollection property="planets" destination="rzv-xB-Vym" collectionClass="NSMutableArray" id="r42-6x-f1j"/>
+                        <outletCollection property="planets" destination="2Gl-24-ppM" collectionClass="NSMutableArray" id="JMb-o4-zSc"/>
+                        <outletCollection property="planets" destination="13d-Ur-aKS" collectionClass="NSMutableArray" id="tcP-VQ-sd3"/>
+                        <outletCollection property="planets" destination="cch-cx-PzX" collectionClass="NSMutableArray" id="Ovn-Kg-bGg"/>
+                        <outletCollection property="planets" destination="mXY-w9-szk" collectionClass="NSMutableArray" id="QsK-zk-SFJ"/>
+                        <segue destination="YHs-Nm-3PS" kind="show" identifier="resultVC" id="uX6-xI-22r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WkC-u6-fFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

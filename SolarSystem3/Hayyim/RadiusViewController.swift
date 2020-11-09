@@ -34,6 +34,7 @@ class RadiusViewController: UIViewController {
         
         resultLabel.isHidden = true
         nextButton.isHidden = true
+        sliderValueLabel.text = String(format: "%1.2f", slider.value)
         
     }
     

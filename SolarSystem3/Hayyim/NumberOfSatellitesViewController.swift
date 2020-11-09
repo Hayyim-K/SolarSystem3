@@ -36,6 +36,7 @@ class NumberOfSatellitesViewController: UIViewController {
         resultLabel.isHidden = true
         nextButton.isHidden = true
         
+        sliderValueLabel.text = String(format: "%1.2f", slider.value)
     }
     
     private func setElements() {
@@ -116,9 +117,7 @@ class NumberOfSatellitesViewController: UIViewController {
     
     @IBAction func checkingButtonPassed() {
         let index = names.firstIndex(of: planetName)
-        
         let rightResult = planetsList[index ?? 3].numberOfSatellite
-        
         let result = 1 - (abs(Float(rightResult) - slider.value) / slider.maximumValue)
         
         switch result {
@@ -145,7 +144,7 @@ class NumberOfSatellitesViewController: UIViewController {
     
     @IBAction func nextButtonPressed() {
         numberOfPointsFromNumOfSatellitesVC += numberOfPointsFromRadiusVC
-        performSegue(withIdentifier: "satelliteVC", sender: nil)
+        performSegue(withIdentifier: "resultVC", sender: nil)
     }
     
     // MARK: - Navigation
