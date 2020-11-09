@@ -10,7 +10,7 @@
         <!--Задание №1-->
         <scene sceneID="whg-fJ-SAE">
             <objects>
-                <tableViewController modalPresentationStyle="fullScreen" id="af9-W0-Ctz" customClass="TableViewControllerArtur" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" interfaceStyle="dark" id="af9-W0-Ctz" customClass="TableViewControllerArtur" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fch-8s-rTJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,7 +65,7 @@
         <!--Navigation Controller-->
         <scene sceneID="0sP-H1-RKv">
             <objects>
-                <navigationController storyboardIdentifier="artur" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="dark" id="p5O-8I-QPN" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="artur" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="dark" id="p5O-8I-QPN" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5qM-df-XCH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

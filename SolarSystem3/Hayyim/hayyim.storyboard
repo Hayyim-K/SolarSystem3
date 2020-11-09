@@ -253,8 +253,11 @@
                                 <rect key="frame" x="-388.5" y="-690.5" width="1152" height="2048"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы оказались близки к истине, ваш результат ___баллов" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjz-2D-1qH">
-                                <rect key="frame" x="16" y="307" width="343" height="53"/>
+                                <rect key="frame" x="16" y="226" width="343" height="215"/>
                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Qjz-2D-1qH" secondAttribute="height" multiplier="343:215" id="PaB-Uv-8rj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -276,7 +279,7 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POo-8y-iHo">
-                                <rect key="frame" x="132.5" y="503" width="110" height="39"/>
+                                <rect key="frame" x="132.5" y="511" width="110" height="39"/>
                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Проверить"/>
@@ -285,14 +288,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gp4-46-IC1" userLabel="Продолжить">
-                                <rect key="frame" x="123.5" y="559" width="128" height="39"/>
+                                <rect key="frame" x="123.5" y="567" width="128" height="39"/>
                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Продолжить"/>
                                 <connections>
-                                    <action selector="checkingButtonPassed" destination="U5i-23-NAk" eventType="touchUpInside" id="Nj6-WX-XWA"/>
-                                    <action selector="nextButtonPressed" destination="U5i-23-NAk" eventType="touchUpInside" id="nZ3-Ga-uZ5"/>
-                                    <action selector="nextButtonPressed" destination="FpI-cj-Bz4" eventType="touchUpInside" id="wTA-bh-sfG"/>
+                                    <action selector="nextButtonPressed" destination="FpI-cj-Bz4" eventType="touchUpInside" id="Alw-w3-tTN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="значение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKi-s9-2gC">
@@ -348,8 +349,8 @@
                             <constraint firstItem="Qjz-2D-1qH" firstAttribute="centerY" secondItem="pbP-tm-1cb" secondAttribute="centerY" id="FbB-AW-mIu"/>
                             <constraint firstItem="auN-hB-VSG" firstAttribute="leading" secondItem="CVr-2Y-H8D" secondAttribute="leading" constant="16" id="KRl-yC-V5q"/>
                             <constraint firstItem="Qjz-2D-1qH" firstAttribute="centerX" secondItem="pbP-tm-1cb" secondAttribute="centerX" id="VNy-zy-2yN"/>
-                            <constraint firstItem="POo-8y-iHo" firstAttribute="top" secondItem="Qjz-2D-1qH" secondAttribute="bottom" constant="143" id="VON-5m-daw"/>
                             <constraint firstItem="721-9N-1GS" firstAttribute="centerX" secondItem="pbP-tm-1cb" secondAttribute="centerX" id="Vap-fU-P7o"/>
+                            <constraint firstItem="POo-8y-iHo" firstAttribute="top" secondItem="Qjz-2D-1qH" secondAttribute="bottom" constant="70" id="WyE-S1-wMj"/>
                             <constraint firstItem="POo-8y-iHo" firstAttribute="centerX" secondItem="pbP-tm-1cb" secondAttribute="centerX" id="YSy-e5-f5C"/>
                             <constraint firstItem="gp4-46-IC1" firstAttribute="centerX" secondItem="pbP-tm-1cb" secondAttribute="centerX" id="YWE-UY-g0N"/>
                             <constraint firstItem="Qjz-2D-1qH" firstAttribute="leading" secondItem="CVr-2Y-H8D" secondAttribute="leading" constant="16" id="Zxq-Rx-Xz6"/>
@@ -365,7 +366,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="gm7-sq-erq"/>
                     <connections>
-                        <outlet property="nextButton" destination="gp4-46-IC1" id="wlG-R2-zCw"/>
+                        <outlet property="nextButton" destination="gp4-46-IC1" id="wzA-sy-AGJ"/>
                         <outlet property="questionLabel" destination="fOH-A3-t49" id="zJM-vf-R8g"/>
                         <outlet property="resultLabel" destination="Qjz-2D-1qH" id="YEx-cq-iQS"/>
                         <outlet property="slider" destination="auN-hB-VSG" id="U2J-Ac-bcZ"/>

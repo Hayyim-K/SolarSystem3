@@ -18,6 +18,8 @@ class NumberOfSatellitesViewController: UIViewController {
     @IBOutlet weak var tryButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
+    var userNameDelegate: ResultsViewControllerDelegate!
+    
     var numberOfPointsFromNumOfSatellitesVC = 0
     
     private let planetsList = Planet.getPlanets()
@@ -128,8 +130,8 @@ class NumberOfSatellitesViewController: UIViewController {
         case 0.8...1: numberOfPointsFromNumOfSatellitesVC  = 5
         default: numberOfPointsFromNumOfSatellitesVC  = 0
         }
-        
-        resultLabel.text = "Вы оказались близки к истине, ваш результат \(numberOfPointsFromNumOfSatellitesVC)баллов!"
+        let resultValue = numberOfPointsFromNumOfSatellitesVC + numberOfPointsFromRadiusVC
+        resultLabel.text = "Вы оказались близки к истине, ваш результат \(numberOfPointsFromNumOfSatellitesVC)баллов!\nПоздравляем! Ваш совокупный результат \(resultValue)"
         
         questionLabel.isHidden = true
         sliderValueLabel.isHidden = true
@@ -143,7 +145,9 @@ class NumberOfSatellitesViewController: UIViewController {
     }
     
     @IBAction func nextButtonPressed() {
+        
         numberOfPointsFromNumOfSatellitesVC += numberOfPointsFromRadiusVC
+        
         performSegue(withIdentifier: "resultVC", sender: nil)
     }
     

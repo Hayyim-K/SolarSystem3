@@ -10,13 +10,13 @@ import UIKit
 class ResultsViewController: UIViewController {
     
     var userNameDelegate: ResultsViewControllerDelegate!
+    var numberOfPointsFromNumOfSatellitesVC: Int!
     
     @IBOutlet weak var resultLabel: UILabel!
     
-    var numberOfPointsFromNumOfSatellitesVC: Int!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let userName = userNameDelegate.userNameDelegate
         resultLabel.text = "Поздравляем \(userName)!\n Ваш результат \(numberOfPointsFromNumOfSatellitesVC ?? 100)"
         
