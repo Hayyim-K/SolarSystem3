@@ -64,13 +64,13 @@
                                 <rect key="frame" x="63" y="208" width="251" height="251"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qx-dG-0Ko">
-                                        <rect key="frame" x="74" y="8" width="103" height="20.5"/>
+                                        <rect key="frame" x="74.5" y="30" width="102" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="VYD-v4-NSq">
-                                        <rect key="frame" x="44" y="44.5" width="163" height="101"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="VYD-v4-NSq">
+                                        <rect key="frame" x="44" y="66.5" width="163" height="101"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cli-lz-WAi">
                                                 <rect key="frame" x="0.0" y="0.0" width="163" height="34"/>
@@ -91,9 +91,12 @@
                                                 </connections>
                                             </textField>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="VYD-v4-NSq" secondAttribute="height" multiplier="163:101" id="1WF-QD-jde"/>
+                                        </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtW-om-JEH">
-                                        <rect key="frame" x="101" y="167.5" width="49" height="30"/>
+                                        <rect key="frame" x="101.5" y="189.5" width="48" height="30"/>
                                         <color key="backgroundColor" red="0.38503886009999999" green="0.38503886009999999" blue="0.38503886009999999" alpha="0.61762764079999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Готово">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -106,26 +109,24 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="VYD-v4-NSq" firstAttribute="leading" secondItem="o6Y-IL-QvL" secondAttribute="leading" constant="44" id="LhY-fa-N2K"/>
+                                    <constraint firstItem="0qx-dG-0Ko" firstAttribute="centerX" secondItem="o6Y-IL-QvL" secondAttribute="centerX" id="CfG-jw-Uqx"/>
+                                    <constraint firstItem="vtW-om-JEH" firstAttribute="centerX" secondItem="o6Y-IL-QvL" secondAttribute="centerX" id="FOY-9N-xWq"/>
+                                    <constraint firstItem="VYD-v4-NSq" firstAttribute="height" secondItem="o6Y-IL-QvL" secondAttribute="height" multiplier="0.40239" id="T3Z-NZ-UCo"/>
                                     <constraint firstAttribute="width" secondItem="o6Y-IL-QvL" secondAttribute="height" multiplier="1:1" id="TMI-v8-Ail"/>
-                                    <constraint firstItem="0qx-dG-0Ko" firstAttribute="top" secondItem="o6Y-IL-QvL" secondAttribute="top" constant="8" id="VeV-Dg-pH4"/>
+                                    <constraint firstItem="0qx-dG-0Ko" firstAttribute="top" secondItem="o6Y-IL-QvL" secondAttribute="top" constant="30" id="WxK-vY-zMT"/>
                                     <constraint firstItem="VYD-v4-NSq" firstAttribute="top" secondItem="0qx-dG-0Ko" secondAttribute="bottom" constant="16" id="cJV-1D-jmc"/>
                                     <constraint firstItem="vtW-om-JEH" firstAttribute="top" secondItem="VYD-v4-NSq" secondAttribute="bottom" constant="22" id="gt1-7N-VlM"/>
-                                    <constraint firstAttribute="trailing" secondItem="VYD-v4-NSq" secondAttribute="trailing" constant="44" id="iR2-XD-Cws"/>
-                                    <constraint firstItem="0qx-dG-0Ko" firstAttribute="leading" secondItem="o6Y-IL-QvL" secondAttribute="leading" constant="74" id="mR2-uo-p65"/>
-                                    <constraint firstAttribute="trailing" secondItem="0qx-dG-0Ko" secondAttribute="trailing" constant="74" id="nRS-I5-id8"/>
-                                    <constraint firstAttribute="trailing" secondItem="vtW-om-JEH" secondAttribute="trailing" constant="101" id="sVz-0M-rlh"/>
-                                    <constraint firstItem="vtW-om-JEH" firstAttribute="leading" secondItem="o6Y-IL-QvL" secondAttribute="leading" constant="101" id="xv4-4u-Fd6"/>
+                                    <constraint firstItem="vtW-om-JEH" firstAttribute="width" secondItem="o6Y-IL-QvL" secondAttribute="height" multiplier="48:251" id="rR3-t8-ma2"/>
+                                    <constraint firstItem="VYD-v4-NSq" firstAttribute="centerX" secondItem="o6Y-IL-QvL" secondAttribute="centerX" id="zvt-yH-8QH"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gTo-eb-7az"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="o6Y-IL-QvL" firstAttribute="top" secondItem="gTo-eb-7az" secondAttribute="top" constant="208" id="8As-Qn-W5i"/>
+                            <constraint firstItem="o6Y-IL-QvL" firstAttribute="width" secondItem="7Hq-UY-sY4" secondAttribute="height" multiplier="251:667" id="GQ1-U3-Q3J"/>
                             <constraint firstItem="o6Y-IL-QvL" firstAttribute="centerY" secondItem="7Hq-UY-sY4" secondAttribute="centerY" id="QAj-zt-azC"/>
                             <constraint firstItem="o6Y-IL-QvL" firstAttribute="centerX" secondItem="7Hq-UY-sY4" secondAttribute="centerX" constant="1" id="Vnf-g7-vsF"/>
-                            <constraint firstItem="o6Y-IL-QvL" firstAttribute="width" secondItem="7Hq-UY-sY4" secondAttribute="height" multiplier="249:667" constant="2" id="t9K-dx-Kgy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ojX-Jt-y38"/>
@@ -302,9 +303,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXI-j8-NYl">
-                                        <rect key="frame" x="93.5" y="141.5" width="156" height="30"/>
+                                        <rect key="frame" x="7.5" y="141.5" width="328" height="30"/>
                                         <color key="backgroundColor" red="0.17754209839999999" green="0.17754209839999999" blue="0.17754209839999999" alpha="0.61762764079999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Сыграть в мини-игры">
+                                        <state key="normal" title="Проверить свои знания о солнечной системе">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>

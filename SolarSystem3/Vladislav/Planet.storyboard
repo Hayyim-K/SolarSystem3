@@ -11,7 +11,7 @@
         <!--Info-->
         <scene sceneID="CVT-zg-Q5c">
             <objects>
-                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="ENn-aL-xy4" customClass="SolarSystemViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" interfaceStyle="dark" id="ENn-aL-xy4" customClass="SolarSystemViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CTV-eM-L83">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,7 +94,7 @@
         <!--Planets View Controller-->
         <scene sceneID="8Xc-Rh-Bk2">
             <objects>
-                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="MQl-ka-Pao" customClass="PlanetsViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" interfaceStyle="dark" id="MQl-ka-Pao" customClass="PlanetsViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IcV-xH-ZTc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -301,7 +301,7 @@
         <!--About Planet View Controller-->
         <scene sceneID="g1O-va-5Ww">
             <objects>
-                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="Bhp-LC-oB7" customClass="AboutPlanetViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" interfaceStyle="dark" id="Bhp-LC-oB7" customClass="AboutPlanetViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="twX-uK-f1E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

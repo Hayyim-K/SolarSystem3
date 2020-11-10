@@ -18,6 +18,7 @@ class MassViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var tryButton: UIButton!
     
+    var numOfPoints: Int!
     var numberOfPointsFromMassVC = 0
     
     private let planetsList = Planet.getPlanets()
@@ -94,7 +95,7 @@ class MassViewController: UIViewController {
     }
     
     @IBAction func nextButtonPressed() {
-        //        numberOfPointsFromNumOfSatellitesVC += numberOfPointsFromArturVC
+        numberOfPointsFromMassVC += numOfPoints
         performSegue(withIdentifier: "radiusVC", sender: nil)
     }
     

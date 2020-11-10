@@ -252,7 +252,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nightSky" translatesAutoresizingMaskIntoConstraints="NO" id="zrL-cA-eI7">
                                 <rect key="frame" x="-388.5" y="-690.5" width="1152" height="2048"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы оказались близки к истине, ваш результат ___баллов" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjz-2D-1qH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы оказались близки к истине, ваш результат ___баллов" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qjz-2D-1qH">
                                 <rect key="frame" x="16" y="226" width="343" height="215"/>
                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -294,6 +294,7 @@
                                 <state key="normal" title="Продолжить"/>
                                 <connections>
                                     <action selector="nextButtonPressed" destination="FpI-cj-Bz4" eventType="touchUpInside" id="Alw-w3-tTN"/>
+                                    <segue destination="4lK-Q9-mvY" kind="unwind" unwindAction="backSegueWithSegue:" id="7yu-pH-yks"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="значение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKi-s9-2gC">
@@ -384,6 +385,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WkC-u6-fFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="4lK-Q9-mvY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1840.8" y="197.45127436281859"/>
         </scene>
@@ -402,7 +404,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jwu-Sd-icM">
                                 <rect key="frame" x="16" y="60" width="343" height="547"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какое количество спутников у планеты \(planetList.name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QR0-p3-ael">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какое количество спутников у планеты \(planetList.name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QR0-p3-ael">
                                         <rect key="frame" x="16" y="247" width="311" height="53"/>
                                         <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>

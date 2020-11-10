@@ -43,10 +43,14 @@
                         <barButtonItem key="rightBarButtonItem" title="Далее" id="O1g-y2-X6B">
                             <connections>
                                 <action selector="checkButtonPress:" destination="af9-W0-Ctz" id="VF3-lh-NPK"/>
-                                <segue destination="DXs-bE-yK5" kind="show" id="bhC-7Q-CcX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                    <connections>
+                        <segue destination="DXs-bE-yK5" kind="show" identifier="hayyim" id="aIY-km-tpu"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1K4-d1-Sd0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,11 +69,17 @@
         <!--Navigation Controller-->
         <scene sceneID="0sP-H1-RKv">
             <objects>
-                <navigationController storyboardIdentifier="artur" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="dark" id="p5O-8I-QPN" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5qM-df-XCH">
+                <navigationController storyboardIdentifier="artur" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="dark" toolbarHidden="NO" id="p5O-8I-QPN" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="5qM-df-XCH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="iPw-Lh-HCH">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="af9-W0-Ctz" kind="relationship" relationship="rootViewController" id="H9x-zD-ygt"/>
                     </connections>

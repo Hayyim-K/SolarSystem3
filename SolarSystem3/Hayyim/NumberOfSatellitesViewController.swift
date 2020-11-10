@@ -152,10 +152,10 @@ class NumberOfSatellitesViewController: UIViewController {
     }
     
     // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let resultVC = segue.destination as! ResultsViewController
-        resultVC.numberOfPointsFromNumOfSatellitesVC  = numberOfPointsFromNumOfSatellitesVC
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let resultVC = segue.destination as! ResultsViewController
+//        resultVC.numberOfPointsFromNumOfSatellitesVC  = numberOfPointsFromNumOfSatellitesVC
+//    }
     
     
 }
