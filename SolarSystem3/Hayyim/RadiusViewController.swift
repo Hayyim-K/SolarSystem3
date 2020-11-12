@@ -17,6 +17,8 @@ class RadiusViewController: UIViewController {
     @IBOutlet weak var tryButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
+    var didh: CGFloat = 128
+    
     var numberOfPointsFromRadiusVC = 0
     
     private let planetsList = Planet.getPlanets()
@@ -35,7 +37,7 @@ class RadiusViewController: UIViewController {
         resultLabel.isHidden = true
         nextButton.isHidden = true
         sliderValueLabel.text = String(format: "%1.2f", slider.value)
-        
+
     }
     
     private func setElements() {
@@ -50,7 +52,7 @@ class RadiusViewController: UIViewController {
         let mass = planetsList.map {$0.radius}
         slider.minimumValue = mass.min() ?? 0
         slider.maximumValue = mass.max() ?? 318
-        slider.value = slider.maximumValue / 2
+        slider.value = slider.maximumValue
         
     }
     
@@ -59,14 +61,16 @@ class RadiusViewController: UIViewController {
     @IBAction func sliderAction() {
         
         sliderValueLabel.text = String(format: "%1.2f", slider.value)
-        let currentValue = Double(slider.value / slider.maximumValue) * 128.0
-        planetImageView.frame.size = CGSize(
-            width: currentValue > 10 ? currentValue : 10,
-            height: currentValue > 10 ? currentValue : 10
-        )
+        let value = Float(sliderValueLabel.text!)!
+        let currentValue = (value / slider.maximumValue) * 128.0
+        
+        planetImageView.layer.frame.size = CGSize(width: CGFloat(currentValue),
+                                                  height: CGFloat(currentValue))
+        
+        planetImageView.frame.origin.x += (didh - planetImageView.layer.frame.height) / 2
+        planetImageView.frame.origin.y += (didh - planetImageView.layer.frame.height) / 2
+        didh = planetImageView.layer.frame.height
     }
-    
-    
     
     @IBAction func checkingButtonPassed() {
         let index = names.firstIndex(of: planetName)

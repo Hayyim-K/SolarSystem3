@@ -7,9 +7,9 @@
 
 import UIKit
 
-protocol ResultsViewControllerDelegate {
-    var userNameDelegate: String { get }
-}
+//protocol ResultsViewControllerDelegate {
+//    var userNameDelegate: String { get }
+//}
 
 class AuthorizationViewController: UIViewController, UITextFieldDelegate {
     
@@ -127,9 +127,9 @@ extension AuthorizationViewController {
     }
 }
 
-extension AuthorizationViewController: ResultsViewControllerDelegate {
-    var userNameDelegate: String {
-        userData.username
-    }
-}
+//extension AuthorizationViewController: ResultsViewControllerDelegate {
+//    var userNameDelegate: String {
+//        userData.username
+//    }
+//}
 

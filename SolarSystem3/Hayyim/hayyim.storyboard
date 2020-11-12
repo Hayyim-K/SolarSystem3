@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U5i-23-NAk">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -11,7 +11,7 @@
         <!--Mass View Controller-->
         <scene sceneID="fVJ-p2-Oer">
             <objects>
-                <viewController storyboardIdentifier="hayyim" modalPresentationStyle="fullScreen" id="U5i-23-NAk" customClass="MassViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="hayyim" wantsFullScreenLayout="YES" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="dark" id="U5i-23-NAk" customClass="MassViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uqz-J9-SW3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,6 +114,9 @@
                             <constraint firstItem="ctA-zE-PtY" firstAttribute="leading" secondItem="zKG-ig-QeU" secondAttribute="leading" constant="16" id="yx7-2w-FfA"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="JiW-cC-7OQ"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="bigPlanetImageView" destination="GvA-1W-8mc" id="UeH-0V-zIH"/>
                         <outlet property="nextButton" destination="sYc-Oh-Xs6" id="LcD-dL-ceL"/>
@@ -128,35 +131,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lqb-0F-qV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114.40000000000001" y="199.25037481259372"/>
+            <point key="canvasLocation" x="1053.5999999999999" y="199.25037481259372"/>
         </scene>
         <!--Radius View Controller-->
         <scene sceneID="iaT-eB-nQu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="aAe-J2-0ah" customClass="RadiusViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="aAe-J2-0ah" customClass="RadiusViewController" customModule="SolarSystem3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="82a-V4-4zh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nightSky" translatesAutoresizingMaskIntoConstraints="NO" id="th7-AG-jIN">
-                                <rect key="frame" x="-389" y="-690.5" width="1152" height="2048"/>
+                                <rect key="frame" x="-388.5" y="-690.5" width="1152" height="2048"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы оказались близки к истине, ваш результат ___баллов" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKK-ab-q0W">
-                                <rect key="frame" x="16" y="307" width="342" height="53"/>
+                                <rect key="frame" x="16" y="307" width="343" height="53"/>
                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="значение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZp-qV-HMR">
-                                <rect key="frame" x="140" y="205.5" width="94" height="27"/>
+                                <rect key="frame" x="140" y="206" width="95" height="26.5"/>
                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Каков радиус планеты \(planetList.name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-pz-aAF">
-                                <rect key="frame" x="16" y="78" width="342" height="100.5"/>
+                                <rect key="frame" x="16" y="78" width="343" height="101"/>
                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="b8e-pz-aAF" secondAttribute="height" multiplier="343:101" id="hzB-Ip-3Um"/>
@@ -166,21 +169,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mhf-qZ-6fd">
-                                <rect key="frame" x="14" y="251.5" width="346" height="31"/>
+                                <rect key="frame" x="14" y="251.5" width="347" height="31"/>
                                 <connections>
                                     <action selector="sliderAction" destination="aAe-J2-0ah" eventType="valueChanged" id="FtB-AK-YRW"/>
                                 </connections>
                             </slider>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Земля" translatesAutoresizingMaskIntoConstraints="NO" id="dB7-vE-CLd">
-                                <rect key="frame" x="123" y="306.5" width="128" height="128"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SiZ-N5-Zk2">
+                                <rect key="frame" x="123.5" y="307" width="128" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Земля" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dB7-vE-CLd">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="3do-fh-S9E"/>
+                                            <constraint firstAttribute="height" constant="128" id="Jra-Lg-uSd"/>
+                                            <constraint firstAttribute="width" secondItem="dB7-vE-CLd" secondAttribute="height" multiplier="1:1" id="ksH-2M-CaR"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="3do-fh-S9E"/>
-                                    <constraint firstAttribute="height" constant="128" id="Jra-Lg-uSd"/>
-                                    <constraint firstAttribute="width" secondItem="dB7-vE-CLd" secondAttribute="height" multiplier="1:1" id="ksH-2M-CaR"/>
+                                    <constraint firstItem="dB7-vE-CLd" firstAttribute="centerY" secondItem="SiZ-N5-Zk2" secondAttribute="centerY" id="4CO-Jd-7fd"/>
+                                    <constraint firstAttribute="height" constant="128" id="E1d-rv-XVI"/>
+                                    <constraint firstAttribute="width" constant="128" id="Eli-g5-YhY"/>
+                                    <constraint firstItem="dB7-vE-CLd" firstAttribute="centerX" secondItem="SiZ-N5-Zk2" secondAttribute="centerX" id="VQr-HH-7t1"/>
+                                    <constraint firstAttribute="width" secondItem="SiZ-N5-Zk2" secondAttribute="height" multiplier="1:1" id="Zoh-Zr-Lfw"/>
                                 </constraints>
-                            </imageView>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J20-TJ-mry">
-                                <rect key="frame" x="123" y="559.5" width="128" height="39"/>
+                                <rect key="frame" x="123.5" y="560" width="128" height="39"/>
                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Продолжить"/>
@@ -189,7 +204,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bX-yJ-4Ma">
-                                <rect key="frame" x="132" y="504.5" width="110" height="39"/>
+                                <rect key="frame" x="132.5" y="505" width="110" height="39"/>
                                 <color key="backgroundColor" white="1" alpha="0.16572131849999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Проверить"/>
@@ -201,20 +216,19 @@
                         <viewLayoutGuide key="safeArea" id="TnJ-2f-IUW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="SiZ-N5-Zk2" firstAttribute="centerX" secondItem="82a-V4-4zh" secondAttribute="centerX" id="2df-vQ-gnQ"/>
                             <constraint firstItem="mhf-qZ-6fd" firstAttribute="top" secondItem="UZp-qV-HMR" secondAttribute="bottom" constant="19" id="3cW-yj-FkN"/>
                             <constraint firstItem="th7-AG-jIN" firstAttribute="centerX" secondItem="82a-V4-4zh" secondAttribute="centerX" id="3sn-0d-xco"/>
-                            <constraint firstItem="4bX-yJ-4Ma" firstAttribute="top" secondItem="dB7-vE-CLd" secondAttribute="bottom" constant="70" id="4AK-SX-EwE"/>
-                            <constraint firstItem="dB7-vE-CLd" firstAttribute="top" secondItem="mhf-qZ-6fd" secondAttribute="bottom" constant="25" id="5I9-ub-Qdq"/>
                             <constraint firstItem="TnJ-2f-IUW" firstAttribute="trailing" secondItem="SKK-ab-q0W" secondAttribute="trailing" constant="16" id="7tO-pX-i0e"/>
                             <constraint firstItem="b8e-pz-aAF" firstAttribute="leading" secondItem="TnJ-2f-IUW" secondAttribute="leading" constant="16" id="9xW-9f-blt"/>
-                            <constraint firstItem="TnJ-2f-IUW" firstAttribute="trailing" secondItem="dB7-vE-CLd" secondAttribute="trailing" constant="123" id="D1f-M1-aOZ"/>
+                            <constraint firstItem="SiZ-N5-Zk2" firstAttribute="top" secondItem="mhf-qZ-6fd" secondAttribute="bottom" constant="25.5" id="F8Q-TL-YHC"/>
                             <constraint firstItem="J20-TJ-mry" firstAttribute="centerX" secondItem="82a-V4-4zh" secondAttribute="centerX" id="Im8-XM-p3L"/>
                             <constraint firstItem="SKK-ab-q0W" firstAttribute="leading" secondItem="TnJ-2f-IUW" secondAttribute="leading" constant="16" id="KY6-av-ghF"/>
                             <constraint firstItem="UZp-qV-HMR" firstAttribute="leading" secondItem="TnJ-2f-IUW" secondAttribute="leading" constant="140" id="KlD-3X-HZ9"/>
                             <constraint firstItem="SKK-ab-q0W" firstAttribute="centerY" secondItem="82a-V4-4zh" secondAttribute="centerY" id="SJU-m6-gSq"/>
-                            <constraint firstItem="dB7-vE-CLd" firstAttribute="leading" secondItem="TnJ-2f-IUW" secondAttribute="leading" constant="123" id="TBJ-4r-b3u"/>
                             <constraint firstItem="th7-AG-jIN" firstAttribute="centerY" secondItem="82a-V4-4zh" secondAttribute="centerY" id="Zap-zi-n7T"/>
                             <constraint firstItem="mhf-qZ-6fd" firstAttribute="leading" secondItem="TnJ-2f-IUW" secondAttribute="leading" constant="16" id="b2W-wp-Njz"/>
+                            <constraint firstItem="4bX-yJ-4Ma" firstAttribute="top" secondItem="SiZ-N5-Zk2" secondAttribute="bottom" constant="70" id="bN1-Vc-bVr"/>
                             <constraint firstItem="UZp-qV-HMR" firstAttribute="top" secondItem="b8e-pz-aAF" secondAttribute="bottom" constant="27" id="cSo-d1-Dhb"/>
                             <constraint firstItem="SKK-ab-q0W" firstAttribute="centerX" secondItem="82a-V4-4zh" secondAttribute="centerX" id="gWw-sN-eUB"/>
                             <constraint firstItem="TnJ-2f-IUW" firstAttribute="trailing" secondItem="b8e-pz-aAF" secondAttribute="trailing" constant="16" id="jIt-fT-wGv"/>
@@ -239,7 +253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="swM-6V-PlR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968.79999999999995" y="198.35082458770617"/>
+            <point key="canvasLocation" x="1908" y="198.35082458770617"/>
         </scene>
         <!--Number Of Satellites View Controller-->
         <scene sceneID="GoE-0e-2hC">
@@ -294,7 +308,7 @@
                                 <state key="normal" title="Продолжить"/>
                                 <connections>
                                     <action selector="nextButtonPressed" destination="FpI-cj-Bz4" eventType="touchUpInside" id="Alw-w3-tTN"/>
-                                    <segue destination="4lK-Q9-mvY" kind="unwind" unwindAction="backSegueWithSegue:" id="7yu-pH-yks"/>
+                                    <segue destination="4lK-Q9-mvY" kind="unwind" unwindAction="backSegueWithSegue:" id="T8G-gu-a00"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="значение" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKi-s9-2gC">
@@ -381,13 +395,12 @@
                         <outletCollection property="planets" destination="13d-Ur-aKS" collectionClass="NSMutableArray" id="tcP-VQ-sd3"/>
                         <outletCollection property="planets" destination="cch-cx-PzX" collectionClass="NSMutableArray" id="Ovn-Kg-bGg"/>
                         <outletCollection property="planets" destination="mXY-w9-szk" collectionClass="NSMutableArray" id="QsK-zk-SFJ"/>
-                        <segue destination="YHs-Nm-3PS" kind="show" identifier="resultVC" id="uX6-xI-22r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WkC-u6-fFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="4lK-Q9-mvY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1840.8" y="197.45127436281859"/>
+            <point key="canvasLocation" x="2780" y="197.45127436281859"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="NcB-E5-by1">
@@ -452,7 +465,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U15-vl-fGT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2661.5999999999999" y="198.35082458770617"/>
+            <point key="canvasLocation" x="3600.8000000000002" y="198.35082458770617"/>
         </scene>
     </scenes>
     <resources>

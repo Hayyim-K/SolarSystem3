@@ -18,7 +18,7 @@ class NumberOfSatellitesViewController: UIViewController {
     @IBOutlet weak var tryButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
-    var userNameDelegate: ResultsViewControllerDelegate!
+//    var userNameDelegate: ResultsViewControllerDelegate!
     
     var numberOfPointsFromNumOfSatellitesVC = 0
     
@@ -131,7 +131,7 @@ class NumberOfSatellitesViewController: UIViewController {
         default: numberOfPointsFromNumOfSatellitesVC  = 0
         }
         let resultValue = numberOfPointsFromNumOfSatellitesVC + numberOfPointsFromRadiusVC
-        resultLabel.text = "Вы оказались близки к истине, ваш результат \(numberOfPointsFromNumOfSatellitesVC)баллов!\nПоздравляем! Ваш совокупный результат \(resultValue)"
+        resultLabel.text = "Вы оказались близки к истине, ваш результат \(numberOfPointsFromNumOfSatellitesVC) баллов!\n \nПоздравляем! Ваш совокупный результат\n \(resultValue) баллов!"
         
         questionLabel.isHidden = true
         sliderValueLabel.isHidden = true
@@ -148,7 +148,7 @@ class NumberOfSatellitesViewController: UIViewController {
         
         numberOfPointsFromNumOfSatellitesVC += numberOfPointsFromRadiusVC
         
-        performSegue(withIdentifier: "resultVC", sender: nil)
+//        performSegue(withIdentifier: "resultVC", sender: nil)
     }
     
     // MARK: - Navigation

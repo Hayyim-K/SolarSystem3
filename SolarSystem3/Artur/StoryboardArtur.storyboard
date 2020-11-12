@@ -43,14 +43,10 @@
                         <barButtonItem key="rightBarButtonItem" title="Далее" id="O1g-y2-X6B">
                             <connections>
                                 <action selector="checkButtonPress:" destination="af9-W0-Ctz" id="VF3-lh-NPK"/>
+                                <segue destination="DXs-bE-yK5" kind="show" id="fBP-8o-PUB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
-                    <connections>
-                        <segue destination="DXs-bE-yK5" kind="show" identifier="hayyim" id="aIY-km-tpu"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1K4-d1-Sd0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,8 +66,6 @@
         <scene sceneID="0sP-H1-RKv">
             <objects>
                 <navigationController storyboardIdentifier="artur" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="dark" toolbarHidden="NO" id="p5O-8I-QPN" sceneMemberID="viewController">
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="5qM-df-XCH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

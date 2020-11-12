@@ -17,12 +17,22 @@ class TableViewControllerArtur: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         tableView.rowHeight = 60
         navigationItem.leftBarButtonItem = editButtonItem
         showAlertView(title: "Задание №1",
                       message: "Расставь планеты в порядке убывания от Солнца")
         planetListShuffle = planetList.map {$0.name}.shuffled()
     }
+    
+    func next() {
+        let storyboard = UIStoryboard(name: "hayyim", bundle: nil)
+        let nextVC = storyboard.instantiateViewController(identifier: "hayyim") as! MassViewController
+        self.present(nextVC, animated: true, completion: nil)
+        
+//        performSegue(withIdentifier: "hayyim0", sender: nil)
+    }
+    
     
     @IBAction func checkButtonPress(_ sender: UIBarButtonItem) {
         
@@ -68,7 +78,8 @@ class TableViewControllerArtur: UITableViewController {
                     message: "но ты можешь заработать баллы в следующих заданиях"
                 )
             }
-            performSegue(withIdentifier: "hayyim", sender: nil)
+            next()
+
         } else  {
             if count > 3 {
                 showAlertView(
@@ -128,12 +139,12 @@ extension TableViewControllerArtur {
 }
 
 extension TableViewControllerArtur {
-    override func tableView(_ tableView: UITableView,
-                            didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        let planet = planetListShuffle[indexPath.row]
-        performSegue(withIdentifier: "showDetails", sender: planet)
-    }
+//    override func tableView(_ tableView: UITableView,
+//                            didSelectRowAt indexPath: IndexPath) {
+//        tableView.deselectRow(at: indexPath, animated: true)
+//        let planet = planetListShuffle[indexPath.row]
+//        performSegue(withIdentifier: "showDetails", sender: planet)
+//    }
     
     override func tableView(
         _ tableView: UITableView,
