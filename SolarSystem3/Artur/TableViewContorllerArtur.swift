@@ -9,6 +9,8 @@ import UIKit
 
 class TableViewControllerArtur: UITableViewController {
     
+    @IBOutlet weak var nextButton: UIButton!
+    
     var planetList = Planet.getPlanets()
     var planetListShuffle: [String] = []
     var numOfPoints = 0
@@ -17,6 +19,8 @@ class TableViewControllerArtur: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nextButton.isHidden = true
 
         tableView.rowHeight = 60
         navigationItem.leftBarButtonItem = editButtonItem
@@ -24,16 +28,8 @@ class TableViewControllerArtur: UITableViewController {
                       message: "Расставь планеты в порядке убывания от Солнца")
         planetListShuffle = planetList.map {$0.name}.shuffled()
     }
-    
-    func next() {
-        let storyboard = UIStoryboard(name: "hayyim", bundle: nil)
-        let nextVC = storyboard.instantiateViewController(identifier: "hayyim") as! MassViewController
-        self.present(nextVC, animated: true, completion: nil)
         
-//        performSegue(withIdentifier: "hayyim0", sender: nil)
-    }
-    
-    
+        
     @IBAction func checkButtonPress(_ sender: UIBarButtonItem) {
         
         let namesFromPlanetList = planetList.map {$0.name}
@@ -78,7 +74,7 @@ class TableViewControllerArtur: UITableViewController {
                     message: "но ты можешь заработать баллы в следующих заданиях"
                 )
             }
-            next()
+            nextButton.isHidden = false
 
         } else  {
             if count > 3 {

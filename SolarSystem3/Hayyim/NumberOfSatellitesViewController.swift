@@ -143,20 +143,5 @@ class NumberOfSatellitesViewController: UIViewController {
             planet.isHidden = true
         }
     }
-    
-    @IBAction func nextButtonPressed() {
-        
-        numberOfPointsFromNumOfSatellitesVC += numberOfPointsFromRadiusVC
-        
-//        performSegue(withIdentifier: "resultVC", sender: nil)
-    }
-    
-    // MARK: - Navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let resultVC = segue.destination as! ResultsViewController
-//        resultVC.numberOfPointsFromNumOfSatellitesVC  = numberOfPointsFromNumOfSatellitesVC
-//    }
-    
-    
 }
 
