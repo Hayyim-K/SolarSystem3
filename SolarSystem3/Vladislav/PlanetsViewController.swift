@@ -42,4 +42,6 @@ class PlanetsViewController: UIViewController {
         chosePlanet = sender.tag
         performSegue(withIdentifier: "AboutPlanet", sender: self)
     }
+    
+    
 }
